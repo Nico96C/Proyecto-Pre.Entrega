@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Proyecto</title>
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="icon" href="img/home-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navBar">
+            <ul>
+                <li class="principal"><a href="/">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/products.html">Todos</a></li>
+                        <li><a href="/products.html?category=beauty">Belleza</a></li>
+                        <li><a href="/products.html?category=fragrances">Perfumes</a></li>
+                        <li><a href="/products.html?category=furniture">Muebles</a></li>
+                        <li><a href="/products.html?category=groceries">Comestibles</a></li>
+                    </ul>
+                </li>
+                <li class="principal"><a href="/about.html">Acerca de</a></li>
+                <li class="principal"><a href="/form.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dicta totam eos similique rerum aspernatur.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+    </footer>
+</body>
+<script>
+    document.querySelector('.dropbtn').addEventListener('click', function() {
+        var dropdownContent = this.nextElementSibling;
+        
+        if (dropdownContent.style.maxHeight) {
+            dropdownContent.style.maxHeight = null;
+        } else {
+            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px"; 
+        }
+    });
+</script>
+</html>
