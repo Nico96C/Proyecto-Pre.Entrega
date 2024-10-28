@@ -3,6 +3,17 @@
   font-family: "Rowdies", sans-serif;
   font-weight: 300;
   font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: antiquewhite;
+  padding: 10px 0;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .product-container {
@@ -14,9 +25,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 3rem;
 }
 
-.card {
+.card-item {
   background-color: antiquewhite;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -28,11 +40,11 @@
   aspect-ratio: 1 / 1;
 }
 
-.card:hover {
+.card-item:hover {
   transform: scale(1.05);
 }
 
-.card .card-img {
+.card-item .card-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,4 +54,8 @@
   border-radius: 8px;
   /*height: auto;*/
   /*object-fit: cover*/
+}
+
+button .reviews {
+  text-decoration: none;
 }

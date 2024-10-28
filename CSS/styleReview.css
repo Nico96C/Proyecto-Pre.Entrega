@@ -1,20 +1,54 @@
+* {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: antiquewhite;
+  padding: 10px 0;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
 main {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .reviewsContainer {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 500px 500px 500px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 500px 500px 500px;
 }
 
 .review {
-    text-align: center;
-    width: 425px;
-    height: auto;
-    border: 1px solid black;
-    background-color: antiquewhite;
-    padding: 10px;
+  text-align: center;
+  width: 425px;
+  height: auto;
+  border: 1px solid black;
+  background-color: antiquewhite;
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  border-radius: 15px;
+}
+
+.review img {
+  border-radius: 50%;
+}
+
+.custom-popover {
+  --bs-popover-max-width: 250px !important;
+  --bs-popover-border-color: black !important;
+  --bs-popover-header-bg: antiquewhite !important;
+  --bs-popover-header-color: black !important;
+  --bs-popover-body-padding-x: 1rem !important;
+  --bs-popover-body-padding-y: .5rem !important;
 }

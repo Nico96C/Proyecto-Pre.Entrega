@@ -14,89 +14,17 @@ html, body {
 .header {
     background-color: antiquewhite;
     padding: 10px 0;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-.navBar ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-.navBar li {
-    margin: 0 20px;
-}
-
-.navBar a {
-    border: 1px solid antiquewhite;
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 7px;
-    display: block;
-    transition: background-color, border 0.3s ease;
-}
-
-.navBar .principal a:hover {
-    background-color: papayawhip;
-    border-radius: 8px;
-    border: 1px solid black;
-}
-
-.dropdown {
-    border: 1px solid antiquewhite;
-    transition: background-color, border 0.3s ease;
-    border-radius: 7px;
-    cursor: pointer;
-}
-
-.dropdown:hover {
-    background-color: papayawhip;
-    border-radius: 8px;
-    border: 1px solid black;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: antiquewhite;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-top: 1px solid rgba(79, 49, 27, 0.5);
-    z-index: 1;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-    max-height: 0;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: rgba(79, 49, 27, 0.5);
-}
-
-.dropdown .dropdown-content {
-    width: 100%;
-    max-height: 0px;
-    transition: max-height 0.3s ease;
 }
 
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #212121;
+    background-color: white;
     height: 100%;
     width: 100%;
     padding-top: 62px;
