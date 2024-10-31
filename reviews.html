@@ -69,30 +69,31 @@
     </header>
 
     <main>
-        <section class="reviews-container">
+        <div class="container">
             <h2>Reseñas del Producto</h2>
-            <p>Presionar imagen para ver info</p>
-            <div class="collapse-product">
-                <p>
-                    <button class="btn" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseWidthExample" aria-expanded="false"
-                        aria-controls="collapseWidthExample">
-                        <img src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png" width="250" height="250" alt="producto-1"/>
-                    </button>
-                </p>
-                <div style="min-height: 120px; height: 285px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <div class="card card-body" style="width: 433px;">
-                            <div class="card" style="width: 25rem;">
-                                <div class="card-header">
-                                    Eyeshadow Palette with Mirror
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">Precio: $19.99</li>
-                                  <li class="list-group-item">Stock: Disponible</li>
-                                  <li class="list-group-item">Descripción: "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application."</li>
-                                </ul>
-                              </div>
+            <div class="card" style="max-width: 1130px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
+                            class="img-fluid rounded-start" alt="..." data-bs-toggle="collapse"
+                            data-bs-target="#cardCollapse" style="cursor: pointer;">
+                    </div>
+                    <div class="col-md-8">
+                        <div id="initialText" class="card-body text-center">
+                            <p class="card-text">Presionar imagen para ver informacion del producto</p>
+                        </div>
+                        <div id="cardCollapse" class="collapse">
+                            <div class="card-body">
+                                <h4 class="card-title">Eyeshadow Palette with Mirror</h4>
+                                <h5>Descripción</h5>
+                                <p class="card-text">"The Eyeshadow Palette with Mirror offers a versatile range of
+                                    eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's
+                                    convenient for on-the-go makeup application."</p>
+                                <p>Price — $ 19.99</p>
+                                <p>Stock — Disponible</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +110,7 @@
                     <button type="button" class="btn btn-outline-success" data-bs-toggle="popover"
                         data-bs-placement="bottom" data-bs-custom-class="custom-popover"
                         data-bs-title="Reseña publicada : date"
-                        data-bs-content=" Rating: review.rating-1 /5 / review.comment - 1">
+                        data-bs-content=" Rating: review.rating-1/5 review.comment - 1">
                         Ver Reseña
                     </button>
 
@@ -125,7 +126,7 @@
                     <button type="button" class="btn btn-outline-success" data-bs-toggle="popover"
                         data-bs-placement="bottom" data-bs-custom-class="custom-popover"
                         data-bs-title="Reseña publicada : date"
-                        data-bs-content=" Rating: review.rating-2 /5 / review.comment - 2 ">
+                        data-bs-content=" Rating: review.rating-2 /5 review.comment - 2 ">
                         Ver Reseña
                     </button>
 
@@ -141,7 +142,7 @@
                     <button type="button" class="btn btn-outline-success" data-bs-toggle="popover"
                         data-bs-placement="bottom" data-bs-custom-class="custom-popover"
                         data-bs-title="Reseña publicada : date"
-                        data-bs-content=" Rating: review.rating-3 /5 / review.comment - 3">
+                        data-bs-content=" Rating: review.rating-3 /5 review.comment - 3">
                         Ver Reseña
                     </button>
 
@@ -149,7 +150,17 @@
                 </div>
             </div>
 
-        </section>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7PzQf1l1Hr4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe> -->
+
+            <video width="400" height="600" controls>
+                <source src="video/videoBelleza.mp4" type="video/mp4">
+            </video>
+
+        </div>
     </main>
 
     <footer class="footer">

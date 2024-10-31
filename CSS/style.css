@@ -15,7 +15,7 @@ body {
 .header {
   background-color: antiquewhite;
   padding: 10px 0;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -24,10 +24,8 @@ body {
 .main {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  flex-direction: column;
   width: 100%;
-  padding-top: 62px;
   background-color: #faa65c;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
 }
@@ -54,6 +52,7 @@ body {
   width: 100%;
   height: 3%;
   background-color: antiquewhite;
+  border-top: 1px solid rgba(100, 100, 100, 0.7);
 }
 
 .icon-container a {
@@ -72,4 +71,34 @@ body {
 
 .icon-container .bi-youtube:hover {
   fill: #ff0000;
+}
+
+.custom-caption {
+  left: 0;
+  right: auto;
+  bottom: 20%;
+  text-align: left;
+  width: 25%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: antiquewhite;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: antiquewhite !important;
+}
+
+.card-group {
+  margin: 20px !important;
+}
+
+.title-quality {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-quality h2 {
+  text-decoration: underline;
 }

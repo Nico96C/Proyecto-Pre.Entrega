@@ -16,7 +16,7 @@ body {
 .header {
   background-color: antiquewhite;
   padding: 10px 0;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -140,4 +140,11 @@ form input[type="submit"]:hover {
 
 .icon-container .bi-youtube:hover {
   fill: #ff0000;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 10px;
+    width: 95%;
+  }
 }

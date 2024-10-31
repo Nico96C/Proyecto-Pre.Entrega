@@ -25,16 +25,14 @@ main {
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
 }
 
+main .container {
+  justify-items: center;
+}
+
 .collapse-product {
   display: flex;
   align-items: center;
   height: 500px;
-}
-
-.reviews-container {
-  display: grid;
-  justify-items: center;
-  margin: 15px 0 15px 0;
 }
 
 .reviews-container h2 {
@@ -42,9 +40,8 @@ main {
 }
 
 .reviewsContainer {
-  width: 100%;
   display: grid;
-  justify-content: center;
+  justify-items: center;
   grid-template-columns: 500px 500px 500px;
 }
 
@@ -77,7 +74,7 @@ main {
   --bs-popover-header-bg: antiquewhite !important;
   --bs-popover-header-color: black !important;
   --bs-popover-body-padding-x: 1rem !important;
-  --bs-popover-body-padding-y: .5rem !important;
+  --bs-popover-body-padding-y: 0.5rem !important;
 }
 
 .footer {
@@ -109,9 +106,91 @@ main {
 
 .collapse-product p .btn {
   border: 1px solid black;
-  transition: all .5s ease-in-out ;
+  transition: all 0.5s ease-in-out;
 }
 
 .collapse-product p .btn:hover {
   background-color: antiquewhite;
+}
+
+.card {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  background-color: antiquewhite !important;
+  border: 2px solid black !important;
+}
+
+.col-md-8 {
+  border-left: 1px solid rgba(82, 82, 82, 0.8);
+}
+
+.card-body p {
+  font-size: 18px;
+}
+
+#cardCollapse.show + #initialText {
+  visibility: hidden;
+  display: none;
+}
+
+video {
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1500px) {
+  .reviewsContainer {
+    grid-template-columns: 400px 400px 400px;
+  }
+
+  .review {
+    width: 300px;
+  }
+
+  .review h3 {
+    font-size: 16px;
+  }
+
+  .review p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .reviewsContainer {
+    grid-template-columns: 275px 275px 275px;
+  }
+
+  .review {
+    width: 250px;
+  }
+
+  .review img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .review h3 {
+    font-size: 14px;
+  }
+
+  .review p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-8 {
+    border-top: 1px solid rgba(82, 82, 82, 0.8);
+    border-left: none;
+  }
+
+  .reviewsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  video {
+    width: 350px;
+    height: 500;
+  }
 }
