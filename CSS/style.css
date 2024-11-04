@@ -101,6 +101,46 @@ main {
   text-decoration: underline;
 }
 
+.featured-product {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.featured-title {
+  width: 40%;
+  text-align: center;
+  padding-right: 2rem;
+  border-right: 1px solid black;
+}
+
+.featured-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 2rem;
+}
+
+.featured-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.featured-container img:hover {
+  transform: scale(1.1);
+  background-color: rgba(105, 105, 105, 0.3);
+}
+
 /*About.html*/
 
 /*Form.html*/
